@@ -211,11 +211,17 @@
 
         <section class="about-text">
           <p>
-            I am a Bachelor of Computer Applications (BCA) student, interested in web development and software development, and actively building my skills through projects and online learning. I enjoy working with technologies like C programming, HTML, and responsive web design and regularly use tools like Visual Studio Code and AI assistants to speed up coding, debugging, and documentation.
+            I am a Bachelor of Computer Applications (BCA) student, interested in web development and software
+            development, and actively building my skills through projects and online learning. I enjoy working with
+            technologies like C programming, HTML, and responsive web design and regularly use tools like Visual Studio
+            Code and AI assistants to speed up coding, debugging, and documentation.
           </p>
 
           <p>
-            Along with my coursework, I practice coding, experiment with front-end layouts, and create tech-related content to explain concepts in a simple way. I am looking for internships, live projects, and entry-level opportunities where I can apply my skills, learn from experienced professionals, and contribute to real-world applications.
+            Along with my coursework, I practice coding, experiment with front-end layouts, and create tech-related
+            content to explain concepts in a simple way. I am looking for internships, live projects, and entry-level
+            opportunities where I can apply my skills, learn from experienced professionals, and contribute to
+            real-world applications.
           </p>
         </section>
 
@@ -643,7 +649,8 @@
 
               <h4 class="h4 timeline-item-title">Data Analytics Job Simulation</h4>
 
-              <span><a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69197832f8a076de76edaeb6_1763287815294_completion_certificate.pdf">Open</a></span>
+              <span><a
+                  href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_69197832f8a076de76edaeb6_1763287815294_completion_certificate.pdf">Open</a></span>
 
               <p class="timeline-text">
                 Deloitte <br>
@@ -655,9 +662,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Technology  Job Simulation</h4>
+              <h4 class="h4 timeline-item-title">Technology Job Simulation</h4>
 
-              <span><a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_69197832f8a076de76edaeb6_1763361669954_completion_certificate.pdf">Open</a></span>
+              <span><a
+                  href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_69197832f8a076de76edaeb6_1763361669954_completion_certificate.pdf">Open</a></span>
 
               <p class="timeline-text">
                 Deloitte <br>
@@ -671,7 +679,8 @@
 
               <h4 class="h4 timeline-item-title">Cybersecurity Analyst Job Simulation</h4>
 
-              <span><a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69197832f8a076de76edaeb6_1763451311700_completion_certificate.pdf">Open</a></span>
+              <span><a
+                  href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69197832f8a076de76edaeb6_1763451311700_completion_certificate.pdf">Open</a></span>
 
               <p class="timeline-text">
                 Tata Technologies <br>
@@ -753,12 +762,14 @@
           <ul class="skills-list content-card">
             <span class="gold"> Winner - Hackathon </span>
 
-              <p class="timeline-text">
+            <p class="timeline-text">
               Issued by Maharishi Arvind Institute of Science & Management · Sep 2025 <br> <br>
               Associated with S.S. Jain Subodh PG (Autonomous) College, Jaipur <br> <br>
-              Received the Certificate of Appreciation for excellence in Hackathon 2025 at S.S. Jain Subodh College, conducted by Maharishi Arvind Institute of Science & Management, Jaipur. Recognized for exceptional problem-solving, teamwork, and innovative thinking during the competition held on 26th September 2025.
+              Received the Certificate of Appreciation for excellence in Hackathon 2025 at S.S. Jain Subodh College,
+              conducted by Maharishi Arvind Institute of Science & Management, Jaipur. Recognized for exceptional
+              problem-solving, teamwork, and innovative thinking during the competition held on 26th September 2025.
             </p>
-            
+
           </ul>
 
         </section>
@@ -1220,26 +1231,21 @@
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formspree.io/f/your-form-id" method="POST" class="form" data-form>
-
+          <form id="contact-form" class="form">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
 
-            <button class="form-btn" type="submit" data-form-btn>
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
 
       </article>
@@ -1248,6 +1254,24 @@
 
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init({ publicKey: 'XbbYfDMDbLt2LMu4s' });
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_2sgpw2d', 'template_y7gdf0q', this)
+        .then(function () {
+          alert('Message sent successfully!');
+        }, function (error) {
+          alert('Failed to send message. Please try again.');
+          console.log(error);
+        });
+    });
+  </script>
 
 
 
