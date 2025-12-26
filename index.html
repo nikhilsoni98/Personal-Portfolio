@@ -802,7 +802,20 @@
           <h3 class="h3 skills-title">Honors & Awards</h3>
 
           <ul class="skills-list content-card">
-            <span class="gold show-credential"> Winner - Hackathon </span>
+            <span id="winnerText" class="gold show-credential"> Winner - Hackathon </span>
+
+            <!-- Confetti Script -->
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+            <script>
+              document.getElementById("winnerText").addEventListener("click", function () {
+                confetti({
+                  particleCount: 200,
+                  spread: 100,
+                  origin: { y: 0.6 }
+                });
+              });
+            </script>
 
             <p class="timeline-text">
               Issued by Maharishi Arvind Institute of Science & Management · Sep 2025 <br> <br>
@@ -811,6 +824,8 @@
               conducted by Maharishi Arvind Institute of Science & Management, Jaipur. Recognized for exceptional
               problem-solving, teamwork, and innovative thinking during the competition held on 26th September 2025.
             </p>
+
+            <!-- show-credential -->
 
             <a href="assets/images/Hackathon.jpg" target="_blank" class="open-link">
               <button>
